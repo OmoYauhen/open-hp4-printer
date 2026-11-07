@@ -1,0 +1,27 @@
+[package]
+name = "open-hp4-printer"
+version = "0.1.0"
+edition = "2021"
+description = "A clean Rust driver for the HP4 (DS-702 / KD1 / LP4) Bluetooth label printer"
+license = "MIT"
+readme = "README.md"
+repository = "https://github.com/OmoYauhen/open-hp4-printer"
+keywords = ["label-printer", "bluetooth", "hp4", "thermal-printer", "cli"]
+categories = ["command-line-utilities", "hardware-support"]
+
+[[bin]]
+name = "hp4"
+path = "src/main.rs"
+
+[dependencies]
+ab_glyph = "0.2"
+anyhow = "1"
+clap = { version = "4", features = ["derive"] }
+image = { version = "0.25", default-features = false, features = ["png", "jpeg", "bmp", "gif"] }
+libc = "0.2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.release]
+strip = true
+lto = true

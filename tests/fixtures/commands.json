@@ -1,0 +1,50 @@
+{
+ "status": "6410010000000000009b",
+ "serial": "6412010000000000009b",
+ "firmware": "6411010000000000009b",
+ "auto_off_never": "640801010000000000009b",
+ "auto_off_1h": "640801010006000000009b",
+ "feed_80": "64020102005000000000009b",
+ "cases": [
+  {
+   "name": "tape_single",
+   "media": "tape15",
+   "first": true,
+   "last": true,
+   "speed": 25,
+   "density": 9
+  },
+  {
+   "name": "tape_first",
+   "media": "tape15",
+   "first": true,
+   "last": false,
+   "speed": 25,
+   "density": 9
+  },
+  {
+   "name": "tape_middle",
+   "media": "tape15",
+   "first": false,
+   "last": false,
+   "speed": 25,
+   "density": 9
+  },
+  {
+   "name": "gap_12x40",
+   "media": "12x40",
+   "first": true,
+   "last": true,
+   "speed": 25,
+   "density": 9
+  },
+  {
+   "name": "gap_14x22_last",
+   "media": "14x22",
+   "first": false,
+   "last": true,
+   "speed": 25,
+   "density": 9
+  }
+ ]
+}
